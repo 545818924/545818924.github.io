@@ -582,7 +582,7 @@ comments:
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: L
   count: true
 
 # DisqusJS
@@ -608,10 +608,10 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
-  serverURLs: # When the custom domain name is enabled, fill it in here
+  enable: true
+  appId: voznh1kVENQkU0kXy8FbFDw3-gzGzoHsz
+  appKey: dO3Kh3ds0RgiXdoIqzSxLvYI
+  serverURLs: https://voznh1kv.lc-cn-n1-shared.com
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
