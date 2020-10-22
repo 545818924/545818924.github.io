@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mr.liu</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-10-22T01:50:45.128Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Mr.Liu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2020/10/22/hello-world/"/>
+    <id>http://example.com/2020/10/22/hello-world/</id>
+    <published>2020-10-22T01:50:45.128Z</published>
+    <updated>2020-10-22T01:50:45.128Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>搭建hexo+git过程</title>
+    <link href="http://example.com/2020/10/20/%E6%90%AD%E5%BB%BAhexo-git%E8%BF%87%E7%A8%8B/"/>
+    <id>http://example.com/2020/10/20/%E6%90%AD%E5%BB%BAhexo-git%E8%BF%87%E7%A8%8B/</id>
+    <published>2020-10-20T09:18:00.000Z</published>
+    <updated>2020-10-22T02:18:36.207Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Hexo是一款基于Node.js的快速，简单而强大的博客框架。我们可以使用Markdown（或其他语言）编写文章，可以方便的生成静态网页托管在GitHub上。&lt;/p&gt;
+&lt;p&gt;此文是记录一下采用得文档，以及一些问题得处理。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;主要参考的是：&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
+    
+    <category term="hexo 博客" scheme="http://example.com/tags/hexo-%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="http://example.com/2020/10/20/Welcome/"/>
+    <id>http://example.com/2020/10/20/Welcome/</id>
+    <published>2020-10-20T04:59:06.000Z</published>
+    <updated>2020-10-22T01:50:45.128Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Welcome&quot;&gt;&lt;a href=&quot;#Welcome&quot; class=&quot;headerlink&quot; title=&quot;Welcome !&quot;&gt;&lt;/a&gt;Welcome !&lt;/h2&gt;&lt;p&gt;have a good</summary>
+        
+      
+    
+    
+    
+    <category term="Testing" scheme="http://example.com/categories/Testing/"/>
+    
+    
+    <category term="test" scheme="http://example.com/tags/test/"/>
+    
+  </entry>
+  
+</feed>
