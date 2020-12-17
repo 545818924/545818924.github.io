@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-22T01:50:45.128Z</updated>
+  <updated>2020-12-17T09:49:07.618Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>记录一次诡异的https传图跨域问题</title>
+    <link href="http://example.com/2020/12/17/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%A1%E5%BC%82%E7%9A%84https%E4%BC%A0%E5%9B%BE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2020/12/17/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%A1%E5%BC%82%E7%9A%84https%E4%BC%A0%E5%9B%BE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
+    <published>2020-12-17T08:41:04.000Z</published>
+    <updated>2020-12-17T09:49:07.618Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;公司有个需求，将windows的传图接口改造到centos（都为阿里云EC）， 基本配置如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CentOS Linux release 7.8.2003 (Core)&lt;/p&gt;
+&lt;p&gt;Server version:</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2020/10/22/hello-world/"/>
-    <id>http://example.com/2020/10/22/hello-world/</id>
-    <published>2020-10-22T01:50:45.128Z</published>
-    <updated>2020-10-22T01:50:45.128Z</updated>
+    <link href="http://example.com/2020/11/19/hello-world/"/>
+    <id>http://example.com/2020/11/19/hello-world/</id>
+    <published>2020-11-19T02:29:12.302Z</published>
+    <updated>2020-11-19T02:29:12.302Z</updated>
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
@@ -37,7 +61,7 @@
     <link href="http://example.com/2020/10/20/%E6%90%AD%E5%BB%BAhexo-git%E8%BF%87%E7%A8%8B/"/>
     <id>http://example.com/2020/10/20/%E6%90%AD%E5%BB%BAhexo-git%E8%BF%87%E7%A8%8B/</id>
     <published>2020-10-20T09:18:00.000Z</published>
-    <updated>2020-10-22T02:18:36.207Z</updated>
+    <updated>2020-11-19T02:29:12.305Z</updated>
     
     
       
@@ -65,7 +89,7 @@
     <link href="http://example.com/2020/10/20/Welcome/"/>
     <id>http://example.com/2020/10/20/Welcome/</id>
     <published>2020-10-20T04:59:06.000Z</published>
-    <updated>2020-10-22T01:50:45.128Z</updated>
+    <updated>2020-11-19T02:29:12.302Z</updated>
     
     
       
