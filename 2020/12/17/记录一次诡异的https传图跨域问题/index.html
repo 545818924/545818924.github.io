@@ -31,10 +31,12 @@
 <meta property="og:site_name" content="Mr.liu">
 <meta property="og:description" content="公司有个需求，将windows的传图接口改造到centos（都为阿里云EC）， 基本配置如下：  CentOS Linux release 7.8.2003 (Core) Server version: Apache&#x2F;2.4.46 (codeit) PHP 7.3.25 (cli) (built: Nov 24 2020 11:10:55) ( NTS )  有个奇怪的问题是，功能代码在windo">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/error.jpg">
 <meta property="article:published_time" content="2020-12-17T08:41:04.000Z">
-<meta property="article:modified_time" content="2020-12-17T09:49:07.618Z">
+<meta property="article:modified_time" content="2020-12-17T09:53:10.723Z">
 <meta property="article:author" content="Mr.Liu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/error.jpg">
 
 
 <link rel="canonical" href="http://example.com/2020/12/17/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%A1%E5%BC%82%E7%9A%84https%E4%BC%A0%E5%9B%BE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/">
@@ -307,7 +309,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-12-17 16:41:04 / 修改时间：17:49:07" itemprop="dateCreated datePublished" datetime="2020-12-17T16:41:04+08:00">2020-12-17</time>
+      <time title="创建时间：2020-12-17 16:41:04 / 修改时间：17:53:10" itemprop="dateCreated datePublished" datetime="2020-12-17T16:41:04+08:00">2020-12-17</time>
     </span>
 
   
@@ -340,7 +342,7 @@
 <p>Server version: Apache/2.4.46 (codeit)</p>
 <p>PHP 7.3.25 (cli) (built: Nov 24 2020 11:10:55) ( NTS )</p>
 </blockquote>
-<p>有个奇怪的问题是，功能代码在windows下http,https 传图都没问题，在centos下http传图没有问题，https传图会偶尔出现跨域提醒![错误提醒](C:/Program Files/Typora/images/error.jpg), 结合网络的答案各种折腾，php header重新设置、设置阿里云OSS跨域、apache升级等等，甚至还想改造代码，设置代理，更换apache为nginx等。不过这样的话动作太大，也没有准确定位到问题，没有动。</p>
+<p>有个奇怪的问题是，功能代码在windows下http,https 传图都没问题，在centos下http传图没有问题，https传图会偶尔出现跨域提醒<img src="/images/error.jpg" alt="错误提醒">, 结合网络的答案各种折腾，php header重新设置、设置阿里云OSS跨域、apache升级等等，甚至还想改造代码，设置代理，更换apache为nginx等。不过这样的话动作太大，也没有准确定位到问题，没有动。</p>
 <p>对于这种偶发性的问题，一开始觉得apache的配置应该是没有问题的，可能出在其他的地方，不过测试了几种方案后感觉还是应该修改配置，毕竟是和ssl证书相关，我是把VirtualHost 单独配置的，想着如果windows配置没有问题，那会不会某些默认配置没有启用导致，想到就把VirtualHost 配置合并，之后就没在出现传图失败了。</p>
 <p>再查看配置找寻原因，注意到ssl.conf默认配置中有这样的内容</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">#   SSL Protocol Adjustments:</span><br><span class="line">#   The safe and default but still SSL&#x2F;TLS standard compliant shutdown</span><br><span class="line">#   approach is that mod_ssl sends the close notify alert but doesn&#39;t wait for</span><br><span class="line">#   the close notify alert from client. When you need a different shutdown</span><br><span class="line">#   approach you can use one of the following variables:</span><br><span class="line">#   o ssl-unclean-shutdown:</span><br><span class="line">#     This forces an unclean shutdown when the connection is closed, i.e. no</span><br><span class="line">#     SSL close notify alert is send or allowed to received.  This violates</span><br><span class="line">#     the SSL&#x2F;TLS standard but is needed for some brain-dead browsers. Use</span><br><span class="line">#     this when you receive I&#x2F;O errors because of the standard approach where</span><br><span class="line">#     mod_ssl sends the close notify alert.</span><br><span class="line">#   o ssl-accurate-shutdown:</span><br><span class="line">#     This forces an accurate shutdown when the connection is closed, i.e. a</span><br><span class="line">#     SSL close notify alert is send and mod_ssl waits for the close notify</span><br><span class="line">#     alert of the client. This is 100% SSL&#x2F;TLS standard compliant, but in</span><br><span class="line">#     practice often causes hanging connections with brain-dead browsers. Use</span><br><span class="line">#     this only for browsers where you know that their SSL implementation</span><br><span class="line">#     works correctly. </span><br><span class="line">#   Notice: Most problems of broken clients are also related to the HTTP</span><br><span class="line">#   keep-alive facility, so you usually additionally want to disable</span><br><span class="line">#   keep-alive for those clients, too. Use variable &quot;nokeepalive&quot; for this.</span><br><span class="line">#   Similarly, one has to force some clients to use HTTP&#x2F;1.0 to workaround</span><br><span class="line">#   their broken HTTP&#x2F;1.1 implementation. Use variables &quot;downgrade-1.0&quot; and</span><br><span class="line">#   &quot;force-response-1.0&quot; for this.</span><br><span class="line">BrowserMatch &quot;MSIE [2-5]&quot; \</span><br><span class="line">         nokeepalive ssl-unclean-shutdown \</span><br><span class="line">         downgrade-1.0 force-response-1.0</span><br></pre></td></tr></table></figure>
