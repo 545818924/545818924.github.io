@@ -55,6 +55,17 @@
       </tags>
   </entry>
   <entry>
+    <title>解决mstsc(windows远程)CredSSP加密问题</title>
+    <url>/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>Win10远程桌面出现身份验证错误：要求的函数不受支持，这可能是由于CredSSP加密Oracle修正 解决方法</p>
+<p><img src="/images/CredSSP.png" alt="img"></p>
+<p>网上方案很多，不过最合适的方案是：<a href="https://github.com/stascorp/rdpwrap/issues/480">https://github.com/stascorp/rdpwrap/issues/480</a></p>
+<p>开始输入cmd，使用管理员打开，输入 </p>
+<p><code>REG ADD HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters\ /v AllowEncryptionOracle /t REG_DWORD /d 2</code></p>
+<p>回车即可。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>记录一次诡异的https传图跨域问题</title>
     <url>/2020/12/17/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E8%AF%A1%E5%BC%82%E7%9A%84https%E4%BC%A0%E5%9B%BE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>公司有个需求，将windows的传图接口改造到centos（都为阿里云EC）， 基本配置如下：</p>

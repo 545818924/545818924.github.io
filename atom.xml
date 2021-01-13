@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-17T09:53:10.723Z</updated>
+  <updated>2021-01-13T06:36:38.702Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决mstsc(windows远程)CredSSP加密问题</title>
+    <link href="http://example.com/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/</id>
+    <published>2021-01-13T06:27:09.000Z</published>
+    <updated>2021-01-13T06:36:38.702Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Win10远程桌面出现身份验证错误：要求的函数不受支持，这可能是由于CredSSP加密Oracle修正 解决方法&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/CredSSP.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;网上方案很多，不过最合适的方案是：&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>记录一次诡异的https传图跨域问题</title>

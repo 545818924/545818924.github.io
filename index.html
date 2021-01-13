@@ -220,7 +220,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -269,6 +269,91 @@
       
 
       
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Mr.Liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.liu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">解决mstsc(windows远程)CredSSP加密问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-01-13 14:27:09 / 修改时间：14:36:38" itemprop="dateCreated datePublished" datetime="2021-01-13T14:27:09+08:00">2021-01-13</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/13/%E8%A7%A3%E5%86%B3mstsc-windows%E8%BF%9C%E7%A8%8B-CredSSP%E5%8A%A0%E5%AF%86%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Win10远程桌面出现身份验证错误：要求的函数不受支持，这可能是由于CredSSP加密Oracle修正 解决方法</p>
+<p><img src="/images/CredSSP.png" alt="img"></p>
+<p>网上方案很多，不过最合适的方案是：<a target="_blank" rel="noopener" href="https://github.com/stascorp/rdpwrap/issues/480">https://github.com/stascorp/rdpwrap/issues/480</a></p>
+<p>开始输入cmd，使用管理员打开，输入 </p>
+<p><code>REG ADD HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters\ /v AllowEncryptionOracle /t REG_DWORD /d 2</code></p>
+<p>回车即可。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
     
 
 
@@ -681,7 +766,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
