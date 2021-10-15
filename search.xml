@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>See you again</title>
-    <url>/2021/10/15/See-you-again/</url>
-    <content><![CDATA[<h1 id="See-you-again"><a href="#See-you-again" class="headerlink" title="See you again"></a>See you again</h1>]]></content>
-  </entry>
-  <entry>
     <title>Welcome</title>
     <url>/2020/10/20/Welcome/</url>
     <content><![CDATA[<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome !"></a>Welcome !</h2><p>have a good time.</p>
@@ -86,10 +81,5 @@
       <tags>
         <tag>运维</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2021/10/15/test/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
